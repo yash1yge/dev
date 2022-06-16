@@ -1,0 +1,266 @@
+.main_sidebar {
+    height: 100%;
+    position: fixed;
+    background: white;
+    left: -1px;
+    top: -1px;
+    width: 316px;
+    z-index: 99;
+    // margin-top: -1px;
+
+    @media (max-width:992px) {
+        top: unset;
+        left: unset;
+    }
+
+    @media (max-width:576px) {
+        width: 267px;
+    }
+
+    .main_bar {
+        border: 1px solid #d7d9da;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+.main_side {
+    padding: 0;
+}
+
+.main_sidebar .main_bar .navbar-nav {
+    display: block !important;
+}
+
+.main_sidebar .main_bar .MuiPaper-elevation1 {
+    box-shadow: unset !important;
+    margin-bottom: 15px !important;
+}
+
+.main_sidebar .main_bar .MuiAccordion-root:before {
+    position: initial !important;
+}
+
+.main_sidebar .main_bar .MuiAccordionSummary-root.Mui-expanded {
+    min-height: 100% !important;
+}
+
+.main_sidebar .main_bar .MuiAccordionSummary-content.Mui-expanded {
+    margin: 0px !important;
+}
+
+.main_sidebar .main_bar .MuiAccordionSummary-content {
+    margin: 0px !important;
+}
+
+.main_sidebar .main_bar .MuiAccordionDetails-root {
+    padding: 0px 10px !important;
+}
+
+.main_sidebar .main_bar .MuiSvgIcon-root {
+    color: #b9bec1 !important;
+}
+
+.main_sidebar .main_bar .main_accordion {
+    .sidebar_icon {
+        padding: 10px 5px;
+        width: 40px;
+        text-align: center;
+
+        & svg {
+            font-size: 20px;
+            color: #ffab2d;
+        }
+    }
+
+    .sidebar_name {
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 126px;
+        color: #969fb1;
+    }
+
+    .sidebar_namber {
+        border-radius: 100%;
+        border: 2px solid #d9beff;
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 600;
+        width: 24px;
+        line-height: 24px;
+        text-align: center;
+        height: 24px;
+    }
+}
+
+.sidebar_color {
+    background: #f3eaff !important;
+    border-radius: 10px !important;
+}
+
+.sidebar_color2 {
+    background: #8833ff !important;
+}
+
+.main_sidebar .main_bar .sidebar_contain {
+    .sidebar_iconimg {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .sidebar_client {
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .sidebar_round {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #2fcd3e;
+        border-radius: 100%;
+        margin-bottom: 5px;
+    }
+
+    .sidebar_activ {
+        margin: 0px;
+        font-size: 15px;
+        padding: 10px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:1399px) and (min-width:1200px) {
+    .main_sidebar {
+        width: 280px !important;
+    }
+
+    .main_sidebar .main_bar .MuiAccordionDetails-root {
+        padding: 0px !important;
+    }
+
+    .main_sidebar .main_bar .sidebar_contain .sidebar_activ {
+        padding: 10px 5px !important;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .main_sidebar {
+        margin-left: -13px !important;
+        margin-top: -1px !important;
+    }
+}
+
+@media (max-width:767px) and (min-width:576px) {
+    .main_sidebar {
+        margin-left: -13px !important;
+        margin-top: -1px !important;
+    }
+}
+
+@media (max-width:575px) and (min-width:320px) {
+    .main_sidebar {
+        margin-top: -1px !important;
+        margin-left: -13px !important;
+    }
+}
+
+.main-sidebar {
+    width: 100%;
+    background-color: #120C2C;
+    height: 100vh;
+    padding: 40px 0;
+
+    .title {
+        text-align: center;
+        font-family: 'Unna', serif;
+
+        h1 {
+            color: white;
+            font-size: 64px;
+
+            span {
+                color: #70d4ad;
+            }
+        }
+    }
+
+    .menu {
+        color: white;
+        padding: 50px 37px;
+
+        li {
+            font-weight: 600;
+            margin: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 5px 65px 5px 5px;
+            width: max-content;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            transition: .3s;
+
+            &:hover {
+                background-color: #9698d5;
+            }
+
+            span {
+                margin-left: 24px;
+            }
+        }
+    }
+
+    .end-menu {
+        color: #ffffffbf;
+        padding: 0px 37px;
+        position: absolute;
+        width: max-content;
+        bottom: 0;
+
+        ul {
+            padding: 0;
+
+            li {
+                font-weight: 600;
+                padding: 5px 65px 5px 15px;
+                margin: 15px 0;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #9698d5;
+                }
+
+                span {
+                    margin-left: 24px;
+                }
+
+                &:first-child {
+                    background-color: white;
+                    color: #040937;
+                    border: 1px solid #040937;
+
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid #9698d5;
+                        color: #9698d5;
+                    }
+                }
+            }
+        }
+    }
+}
