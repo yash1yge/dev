@@ -11,7 +11,7 @@ class LineChart extends Component {
                id: "basic-bar",
             },
             xaxis: {
-               categories: ["", "", ""],
+               categories: ["YASH", "", ""],
             },
             yaxis: {
                show: true,
